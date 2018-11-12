@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,700|Oleo+Script:400,700');
+
+* {  
+    outline: none;
+}
+
+.wrapper {
+    width: 500px;
+    margin: 0 auto;
+    border: 1px solid #9e9a9a;
+    font-family: 'Oleo Script', cursive;
+    box-shadow: 5px 5px 20px #9e9a9a;
+}
+
+.title {
+    margin: 5px 0;
+    font-size: 50px;
+    text-align: center;
+    color: #db5d22;
+    
+}
+
+.container {
+    width: 100%;
+    height: 640px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+    overflow-y: auto;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.tinder-profile {
+    width: 100%;
+    height: 400px;
+}
+
+.profile__picture-location {
+    display: flex;
+    align-items: baseline;
+}
+
+.profile__picture {
+    width: 450px;
+    height: 270px;
+    border-right: 20px solid #fff;
+    border-top: 20px solid #fff;
+    border-bottom: 20px solid #fff;
+    border-radius: 0 100% 100% 0;
+    overflow: hidden;
+    z-index: 1
+
+}
+
+.profile__picture img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.profile__location {
+    width: 500px;
+    height: 270px;
+    margin-left: -90px;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+.profile__info {
+    display: flex;
+    align-items: baseline;
+    margin-left: 25px;
+    font-size: 12px;
+}
+
+.profile__info .age {
+    margin-left: 5px;
+}
+
+.profile__city {
+    margin-top: -20px;
+    margin-left: 25px;
+    color: #797777;
+}
+
+.center {
+    float:right;
+    margin-top: -30px;
+    margin-right: 50px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #db5d22;
+    border-radius : 100%;
+    background: none;
+    font-size: 20px;
+    color: #db5d22;
+}
+
+.choices__like, .choices__dislike {
+    width: 150px;
+    height: 150px;
+    border: none;
+    border-radius: 100%; 
+    font-size: 100px;
+}
+
+.choices__like i, .choices__dislike i{
+    margin-top: 15px; 
+}
+
+.choices__like {
+    float: right;
+    margin-right: 50px;
+    background-color: #26b626;
+}
+
+.choices__dislike {
+    margin-left: 50px;
+    background-color: #db2e2e;
+}
+
+.container hr {
+    width: 90%;
+    margin: 32px auto;
+}
+
+
+.profile-list {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #9e9a9a;
+    padding: 10px 0px;
+    padding-left: -5px;    
+}
+
+.profile-list:last-child {
+    border-bottom: none;
+}
+
+.profile-list .profile-list__picture {
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+}
+
+.profile-list .profile-list__picture img {
+    width: 100%;
+    height: 100%;
+}
+
+.profile-list .profile-list__name {
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.profile-list .button {
+    margin-right: 10px;
+    margin-left: auto;
+}
+
+.profile-list .button .button-list {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 100%;
+    font-size: 25px;
+}
+
+.list-like {
+    background: #26b626;
+
+}
+
+.list-like i {
+    margin-top: 7px;
+}
+
+.list-dislike {
+    background: #db2e2e
+}
+
+.list-dislike i {
+    margin-top: 4px;
+}
+
+.message {
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.message p {
+    margin: 0 auto;
+    text-align: center;
+    text-transform: none;
+    color: #9e9a9a;
+}
+
+.menu {
+    font-size: 0;
+}
+
+.menu .menu-button {
+    width: 33.33333%;
+    border: none;
+    border-top: 1px solid #9e9a9a;
+    border-right: 1px solid #9e9a9a;
+    padding: 20px 0px;
+    background: white;
+    font-family: 'Oleo Script', cursive;
+    font-size:20px;   
+}
+
+.menu .menu-button:last-child {
+    border-right: none;
+}
+
+.menu .menu-button.active {
+    border-top: none;
+    padding-top: 21px;
+    font-weight: 700;
+}
+
+.menu .menu-button i {
+    margin-right: 5px;
+}

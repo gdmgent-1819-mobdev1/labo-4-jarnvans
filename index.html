@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.js'></script>
+    <script src='https://api.mapbox.com/mapbox.js/plugins/turf/v3.0.11/turf.min.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.css' rel='stylesheet' />
+    <title>Jinder</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="title">Jinder</h1>
+        <div class="container">
+            <div class="tinder-profile" draggable="true"></div>
+            <hr>
+            <div class="choices">
+                <button class="choices__dislike"><i class="fas fa-times"></i></button>
+                <button class="choices__like"><i class="fas fa-heart"></i></button>
+            </div>
+        </div>
+        <div class="menu">
+            <button class="menu-button dislikes"><i class="fas fa-times"></i>Dislikes</button>
+            <button class="menu-button profiles active"><i class="fas fa-exchange-alt fa-rotate-90"></i></button>
+            <button class="menu-button likes non-active"><i class="fas fa-heart"></i>Likes</button>
+        </div>
+    </div>
+    <script src="js/classes.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/dnd.js"></script>
+    <script src="js/hammer.min.js"></script>
+    <script src="js/hammer.js"></script>
+</body>
+</html>
