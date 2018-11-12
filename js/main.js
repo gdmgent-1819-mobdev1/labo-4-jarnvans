@@ -52,7 +52,7 @@ function runProfiles() {
 
     currentLocation = JSON.parse(sessionStorage.getItem('currentLocation'));
     if(currentLocation == null){
-        currentLocation = {longitude: 0, latitude: 0};
+        currentLocation = {longitude: 3.670823000014252, latitude: 51.0875347825972};
     }
 
     if (likes != null || dislikes != null){
