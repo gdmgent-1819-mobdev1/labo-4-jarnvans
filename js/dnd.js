@@ -21,4 +21,4 @@ function dragEnd(e) {
 }
 
 document.querySelector('.tinder-profile').addEventListener('dragstart', dragStart, false);
-document.querySelector('.tinder-profile').addEventListener('dragend', dragEnd, false);
+document.querySelector('.tinder-profile').addEventListener('dragend', dragEnd, false);320201.5

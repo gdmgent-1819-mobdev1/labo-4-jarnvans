@@ -188,7 +188,7 @@ function showMap(location) {
 //convert address to coordinates
 function getCoordinatesFromAddress(search, profileNumber) {
     let address = encodeURI(search);
-    let url = `https://api.mapbox.com/geocoding/v5/mapbox.places/${address}.json?limit=1&access_token=pk.eyJ1IjoiamFybnZhbnMiLCJhIjoiY2puY2NjOGFoMDV3czNrbnZjNzJicTFvbiJ9.YmULBJZC1OMMVucfXxLliA`
+    let url = `https://api.mapbox.com/geocoding/v5/mapbox.places/${address}.json?limit=1&access_token=pk.eyJ1IjoiamFybnZhbnMiLCJhIjoiY2puY2NjOGFoMDV3czNrbnZjNzJicTFvbiJ9.YmULBJZC1OMMVucfXxLliA`;
     fetch(url)
     .then(function(response){
         return response.json();
@@ -219,7 +219,6 @@ function getLocation(position) {
     let current = {longitude: '', latitude: ''};
     current.longitude = position.coords.longitude;
     current.latitude = position.coords.latitude;
-    sessionStorage.setItem('currentLocation', JSON.stringify(current));
     sessionStorage.setItem('currentLocation', JSON.stringify(current));
 }
 
@@ -312,7 +311,7 @@ function changeChoice(type, profileNumber) {
 
 //event listeners
 profilesEl.addEventListener('click', function(e){
-    profilesEl.classList.add('active')
+    profilesEl.classList.add('active');
     dislikesEl.classList.remove('active');
     likesEl.classList.remove('active')
     e.preventDefault();
@@ -357,7 +356,7 @@ document.querySelector('.choices__dislike').addEventListener('click', function()
 
 dislikesEl.addEventListener('click', function(e){
     e.preventDefault();
-    profilesEl.classList.remove('active')
+    profilesEl.classList.remove('active');
     dislikesEl.classList.add('active');
     likesEl.classList.remove('active');
     listLikesDislikes('dislikes');
@@ -365,7 +364,7 @@ dislikesEl.addEventListener('click', function(e){
 
 likesEl.addEventListener('click', function(e){
     e.preventDefault();
-    profilesEl.classList.remove('active')
+    profilesEl.classList.remove('active');
     dislikesEl.classList.remove('active');
     likesEl.classList.add('active');
     listLikesDislikes('likes');
